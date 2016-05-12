@@ -1,0 +1,9 @@
+微信token校验
+jetty/springmvc 可在SAE验证 
+
+mvn clean
+mvn package  (打包war 其等效执行 mvn compile test-compile test war:exploded war:war。包含编译、测试和打包三步骤)
+mvn -Djetty.port=9999 jetty:run
+可以同时启动多个，而不至于端口冲突
+
+
