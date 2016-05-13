@@ -69,5 +69,25 @@
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>
 	</welcome-file-list>
-
+	
+	
+	<!-- 微信 access_token 管理 -->
+	<servlet>    
+        <servlet-name>initServlet</servlet-name>    
+        <servlet-class>    
+            com.hubert.init.InitServlet    
+        </servlet-class>    
+        <!-- 配置获取access_token所需参数appid和appsecret  --> 
+    	<init-param>    
+            <param-name>appid</param-name>    
+            <!-- <param-value>${appId}</param-value>  -->  
+            <param-value>wx64e67d97dea340fe</param-value>       
+        </init-param>    
+        <init-param>    
+            <param-name>appsecret</param-name>    
+            <!--<param-value>${appSecret}</param-value>  -->  
+            <param-value>d836824b1f884facad7e2f070c12d93e</param-value>   
+        </init-param>   
+        <load-on-startup>0</load-on-startup>    
+    </servlet>  
 </web-app>

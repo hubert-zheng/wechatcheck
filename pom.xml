@@ -141,6 +141,12 @@
 			<type>jar</type>
 			<scope>provided</scope>
 		</dependency>
+		<!-- httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.4</version>
+		</dependency>
 
 	</dependencies>
 	<build>
@@ -169,7 +175,7 @@
 						<stopKey>foo</stopKey>
 						<scanIntervalSeconds>10</scanIntervalSeconds>
 						<webApp>
-							<!-- 项目名teff,可随意更换成***，访问项目路径为：localhost:port/***  -->
+							<!-- 项目名teff,可随意更换成***，访问项目路径为：localhost:port/*** -->
 							<contextPath>/teff</contextPath>
 						</webApp>
 					</configuration>
