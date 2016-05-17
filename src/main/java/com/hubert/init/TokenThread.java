@@ -1,11 +1,8 @@
 package com.hubert.init;
 
-import java.io.IOException;
-
 import org.apache.log4j.Logger;
 
 import com.hubert.bean.AccessToken;
-import com.hubert.util.GetPropertiesValue;
 import com.hubert.util.Wechat_Info;
 
 /**
@@ -22,7 +19,8 @@ public class TokenThread implements Runnable{
     public static String appsecret = "";    
     public static AccessToken accessToken = null;    
     
-    public void run() {    
+    public void run() {
+    	//死循环  每7060秒再次获取一次Token
         while (true) {    
             try {    
                 accessToken = Wechat_Info.getAccessToken(appid, appsecret);    
